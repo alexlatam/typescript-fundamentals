@@ -1,0 +1,41 @@
+/**
+ * Primitive Types
+ */
+let MyAddress: string = 'Valencia, Venezuela'
+let MyAge: number     = 30;
+let Height: number;    // undefined
+let isActive: boolean = true
+/**
+ * ARRAYS
+ */
+let MyArray: number[]        = [1, 2, 3, 4, 5] // Array de números
+let MyStringArray: string[]  = ['a', 'b', 'c', 'd', 'e'] // Array de strings
+let MyArray2: Array<number>  = [1, 2, 3, 4, 5] // Array de números
+let MyArray3: Array<string>  = ['a', 'b', 'c', 'd', 'e'] // Array de strings
+let MyArray4: Array<boolean> = [true, false, true, false, true] // Array de booleanos
+let MyArray5: Array<any>     = [1, 'a', true, 2, 'b', false, 3, 'c', true, 4, 'd', false, 5, 'e', true] // Array de cualquier tipo de dato
+
+/**
+ * OBJECTS
+ */
+let MyObject: object = { name: 'TypeScript', version: 3.9 } // Objecto con dos propiedades de tipo string y number
+let MyObject2: { name: string, version: number } = { name: 'TypeScript', version: 3.9 } // Objecto con dos propiedades de tipo string y number
+let MyObject3: { name: string, version: number, isActive: boolean } = { name: 'TypeScript', version: 3.9, isActive: true } // Objecto con tres propiedades de tipo string, number y boolean
+
+/**
+ * TUPLES
+ * Es un array con un número fijo de elementos cuyos tipos son conocidos, pero no necesariamente del mismo tipo.
+ * */
+let MyTuple: [string, number, boolean] = ['a', 1, true] // Array con tres elementos de tipo string, number y boolean
+
+/**
+ * ENUMS
+ * Es un tipo de dato que nos permite definir un conjunto de constantes con nombre.
+ * */
+enum MyEnum {
+    A = 'A',
+    B = 'B',
+    C = 'C',
+    D = 'D',
+}
+
